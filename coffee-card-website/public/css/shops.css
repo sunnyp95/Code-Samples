@@ -1,0 +1,425 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #dcbd9a;
+  overflow-x: hidden;
+}
+
+p{
+  font-weight: 400;
+}
+
+.break{
+  flex-basis: 100%;
+  height: 0;
+}
+
+.footer-break{
+  flex-basis: 100%;
+  height: 0;
+  margin-top: -75px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+a:hover{
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
+a:focus{
+    text-decoration: none;
+    color: #212529;
+}
+
+a:active{
+  text-decoration: none;
+  color: #212529;
+}
+
+a:checked{
+  color: #212529;
+  text-decoration: none;
+}
+
+.nav-desktop{
+  font-size: 15px;
+  height: 70px;
+  width:100%;
+  background-color: black;
+  color: white;
+  z-index: 3;
+}
+
+.hometitle-desktop{
+  height: 50px;
+  width: 50px;
+  font-weight:bold;
+  line-height: 1.8em;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.nav-desktop .button{
+  vertical-align: 45%;
+  background: linear-gradient(270deg, #dcbd9a, #75411f);
+  background-size: 150% 150%;
+  color: white;
+  opacity: .99;
+  font-size: 14px;
+  padding: 12px 20px;
+  border:none;
+  cursor: pointer;
+  border-radius: 999px;
+  float:right;
+  display:inline;
+}
+
+.nav-desktop .button:hover{
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.nav-desktop .button:active{
+  outline: none;
+  background-color: white;
+  color: black;
+}
+
+.nav-desktop .button:focus{
+  outline: none;
+}
+
+.nav-desktop a:hover{
+  opacity: .8;
+}
+
+.nav-desktop ul{
+  padding:0;
+  list-style: none;
+  float:right;
+  padding-right: 20px;
+}
+
+.nav-desktop li{
+  padding: 8px;
+  padding-top: 12px;
+  float:right;
+  display:inline;
+}
+
+.nav-desktop li .lesspadding{
+  padding-right: 0px;
+}
+
+.nav-desktop .slogan{
+    position: relative;
+    bottom: 18px;
+    font-size: 22px;
+}
+
+.nav-desktop .slogan .button:hover{
+  text-decoration: none;
+  opacity: 0;
+}
+
+.nav{
+  display: none;
+  font-size: 15px;
+  height: 70px;
+  width:100%;
+  Margin-top: Auto;
+  background-color: black;
+  color: white;
+  z-index: 3;
+}
+
+.nav .hometitle{
+  height: 50px;
+  width: 50px;
+  font-weight:bold;
+  line-height: 1.8em;
+  font-size: 25px;
+  margin-top: 9px;
+  margin-left: 18px;
+}
+
+.nav .button{
+  vertical-align: 50%;
+  background: linear-gradient(270deg, #dcbd9a, #75411f);
+  background-size: 150% 150%;
+  color: white;
+  opacity: .8;
+  font-size: 14px;
+  padding: 10px 18px;
+  margin-right: 10px;
+  border:none;
+  cursor: pointer;
+  border-radius: 999px;
+}
+
+.nav .button:hover{
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.nav .button:active{
+  outline: none;
+  background-color: white;
+  color: black;
+}
+
+.nav .button:focus{
+  outline: none;
+}
+
+.nav .slogan{
+    position: relative;
+    bottom: 22px;
+    font-size: 12px;
+}
+
+.dropbtn {
+  vertical-align: 1%;
+  background-color: black;
+  padding: 10px;
+  padding-right: 0px;
+  padding-left: 5px;
+  border-radius: 4px;
+  padding-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:focus {
+  outline: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  margin-top: 18px;
+  margin-right: 25px;
+  display: inline-block;
+  float:right;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  width: 100%;
+  height: 550px;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-size: 20px;
+  margin-right: 25px;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content hr{
+  margin-right: 40px;
+  height: 1px;
+  width: 25%;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {opacity: .5; border-radius: 10px;}
+
+
+/* Show the dropdown menu on hover */
+.dropbtn:hover + .dropdown-content {
+  display: block;
+}
+
+.dropdown-content:hover{
+  display: block;
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+
+.HIW {
+  height: 100%;
+  width: 100%;
+  background: #dcbd9a;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.HIW h1 {
+  font-size: 30px;
+  padding-top: 50px;
+  color: black;
+}
+
+.HIW h2{
+  font-size: 25px;
+  padding-top: 40px;
+  color: black;
+}
+
+.HIW h3 {
+  margin-top: -3px;
+  color: black;
+  font-weight: 300;
+}
+
+.HIW .servicebreak{
+  height: 3px;
+  width: 50px;
+  background-color: #dcbd9a;
+}
+
+.HIW .round {
+    position: relative;
+    border: 2px solid #dcbd9a;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.HIW .round h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.0em;
+  color: #dcbd9a;
+}
+
+.HIW .round-1 {
+    background: black;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    border: 3px solid black;
+    max-width: 450px;
+    width: 75%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 14px;
+    margin-top: -1px;
+}
+
+.HIW .round-1 h3{
+  color: #dcbd9a;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+}
+
+.HIW .round-1 p{
+  color: white;
+  margin: 5% 8%;
+}
+
+.HIW .line {
+  border-left: 5px solid black;
+  height: 100px;
+  margin-right: -2px;
+  position: relative;
+  top: 0;
+}
+
+.HIW .button{
+  vertical-align: 50%;
+  background: linear-gradient(270deg, #dcbd9a, #75411f);
+  background-size: 150% 150%;
+  color: white;
+  opacity: .8;
+  font-size: 14px;
+  padding: 10px 18px;
+  margin-right: 10px;
+  border:none;
+  cursor: pointer;
+  border-radius: 999px;
+}
+
+.HIW .button:hover{
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.HIW .button:active{
+  outline: none;
+  background-color: white;
+  color: black;
+}
+
+.HIW .button:focus{
+  outline: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+  body p{
+    font-size: 17px;
+  }
+
+  body h3{
+    font-size: 20px;
+  }
+
+  body h1{
+    font-size: 24px;
+    margin: 0 7.5%;
+  }
+
+  footer p{
+    font-size: 12px;
+  }
+
+  .footer-break{
+    flex-basis: 100%;
+    height: 0;
+    margin-top: 0px;
+  }
+
+  .nav-desktop{
+    display: none;
+  }
+
+  .nav{
+    display: block;
+  }
+
+  .dropdown {
+    margin-top: 11px;
+    margin-right: 19px;
+  }
+
+  .symbol{
+    display: none;
+  }
+}
